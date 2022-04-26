@@ -1,7 +1,6 @@
 {
     "ignore": [
-      "README.md",
-      "test/.gitkeep"
+      "README.md"
     ],
     "commands": {
       "Compile": "truffle compile",
