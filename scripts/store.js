@@ -1,9 +1,9 @@
-const SimpleStorage = artifacts.require('SimpleStorage');
+const HelloBlockchain = artifacts.require('HelloBlockchain');
 
 module.exports = async (callback) => {
   try {
-    const storage = await SimpleStorage.deployed();
-    const reciept = await storage.set("Hello World");
+    const helloBlockchain = await HelloBlockchain.deployed();
+    const reciept = await helloBlockchain.SendRequest("Hello World");
     console.log(reciept);
 
   } catch(err) {
